@@ -1,0 +1,36 @@
+body {
+    background-image: url('/img/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.registration-form {
+    background-color: rgba(255, 255, 255);
+    border-radius: 10px;
+    height: 500px;
+    width: 400px;
+}
+
+.LogIn-link {
+    color: #AE1AF2;
+    font-weight: bold;
+}
+
+.LogIn-link:hover {
+    color:#AE1AF2;
+    text-decoration: none;
+}
+
+.btn-registration {
+    background-color: #8600C8;
+    border: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
+}
+
+.btn-registration:hover {
+    background-color: #AE1AF2;
+}

@@ -1,0 +1,49 @@
+table{
+    padding: 15px;
+    margin: 15px;
+    width: 80%;
+}
+
+
+
+.titulo{
+    background-color: rgb(65, 65, 227);
+    color: #fff;
+    font-size: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; 
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff; 
+}
+
+td{
+    font-size: 20px;
+}
+
+img{
+    height: 30px;
+    width: 30px;
+}
+
+colunas {
+    margin-right: 10px;
+}
+
+td button {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.buttons{
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}

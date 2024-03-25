@@ -15,11 +15,14 @@
         <th class="titulo col-3">Senha</th>
         <tbody>
             <% users.forEach(user => { %>
-                <tr class="col-3">
-                    <td class="colunas"><%= user.name %></td>
-                    <td class="colunas"><%= user.email %></td>
-                    <td class="colunas"><%= user.password %></td>
-                    <td class="buttons"><button id="deletar" onclick="deleteUsers('<%= user.email %>')"><img src="/img/excluir.png" alt="delete" class="icon"></button></td>
+                <tr>
+                    <td><%= user.name %></td>
+                    <td><%= user.email %></td>
+                    <td><%= user.password %></td>
+                    <td>
+                        <button onclick="deleteUser('<%= user.email %>')"><img src="/img/excluir.png" alt="delete" class="icon"></button>
+                    </td>
+                </tr>
             <% }); %>
         </tbody>
     </table>

@@ -21,10 +21,14 @@ app.use(session({
 const signUpRoutes = require('./routes/sign-up');
 const loginRoutes = require('./routes/index');
 const homeRoutes = require('./routes/home');
+const usersRouters = require('./routes/users');
+const logoutRouters = require('./routes/logout');
 
-app.use('/sign-up', signUpRoutes);
 app.use('/', loginRoutes);
+app.use('/sign-up', signUpRoutes);
 app.use('/home', homeRoutes);
+app.use('/users', usersRouters);
+app.use('/logout', logoutRouters);
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

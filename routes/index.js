@@ -16,8 +16,8 @@ router.post('/', async (req, res) => {
     try {
         if (email === '' || password === '') {
             throw new Error('Campos obrigatórios! Tente novamente');
-        }
-        const [rows] = await connection.query('SELECT * FROM usuarios WHERE email = ? AND password = ?', [email, passwordCrypto]);
+    }
+    const [rows] = await connection.query('SELECT * FROM usuarios WHERE email = ? AND password = ?', [email, password]);    
 
         if (rows.length === 0) {
             throw new Error('Email ou senha incorreto');
